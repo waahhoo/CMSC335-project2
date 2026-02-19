@@ -1,24 +1,27 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terp Store</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="page">
-        <header>
-            <h1 class="site-title">Terp Store</h1>
-        </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Terp Store</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="page">
+            <header>
+                <h1 class="site-title">Terp Store</h1>
+            </header>
 
-        <main>
-            <div class="links-box" role="navigation">
-                <a class="main-link" href="catalogInquiry.shtml">Catalog Inquiry</a>
-                <a class="main-link" href="placingOrder.shtml">Placing Order</a>
-            </div>
-        </main>
+            <main>
+                <div class="links-box" role="navigation">
+                    <a class="main-link" href="catalogInquiry.shtml">Catalog
+                        Inquiry</a>
+                    <a class="main-link" href="placingOrder.shtml">Placing
+                        Order</a>
+                </div>
+            </main>
 
-        <!--#include virtual="footer.shtml" -->
-    </div>
-</body>
+            <!--#include virtual="footer.shtml" -->
+        </div>
+    </body>
 </html>

@@ -2,6 +2,7 @@ html {
     background: #000000;
     display: flex;
     justify-content: center;
+    height: 100%;
 }
 
 body {
@@ -76,12 +77,12 @@ main {
     transform: scale(0.92);
 }
 
-/* Footer styling - style the provided footer.shtml output */
 footer {
     position: absolute;
-    left: 12px;
-    right: 12px;
-    bottom: 12px;
+    display: flex;
+    justify-content: center;
+    bottom: 16px;
+    width: 52.8vw;
 }
 
 footer>div {
@@ -90,6 +91,7 @@ footer>div {
     text-align: center;
     box-shadow: inset 0 -6px 0 #c0c0c0, 0 6px 0 rgba(0, 0, 0, 0.2);
     border: 6px solid #ddd;
+    width: 100%;
 }
 
 footer a {
@@ -106,7 +108,9 @@ footer a:hover {
 
 .inquiry-box {
     width: 60%;
-    margin-left: 5rem;
+    margin-left: 3rem;
+    margin-top: 5rem;
+    height: 60%;
 }
 
 .inquiry-form {
@@ -114,7 +118,7 @@ footer a:hover {
     border: 0.5rem solid azure;
     padding: 2rem;
     width: 100%;
-    height: 70%;
+    height: 100%;
 }
 
 .form-group {
@@ -140,8 +144,9 @@ footer a:hover {
 }
 
 .form-group select,
+.form-group input,
 .form-group input[type="number"],
-.form-group input[type="email"]{
+.form-group input[type="email"] {
     border: 4px solid red;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
@@ -150,7 +155,7 @@ footer a:hover {
     max-width: 250px;
 }
 
-.form-column label{
+.form-column label {
     text-decoration: underline;
     color: #000;
     margin-bottom: 0.5rem;
@@ -191,32 +196,37 @@ footer a:hover {
 
 .form-buttons {
     display: flex;
-    gap: 1rem;
-    margin-top: 1.5rem;
-    justify-content: center;
+    gap: 2vw;
+    margin-top: 2vw;
+    justify-content: flex-start;
 }
 
 .submit-btn,
 .reset-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Order form styling for Placing Order page */
 .order-form {
     background-color: rgba(255, 255, 255, 0.85);
     border: 0.5rem solid azure;
     padding: 2.5% 4%;
-    border-radius: 6px;
-    max-width: 60vw;
-    min-width: 320px;
-    width: 60vw;
-    box-sizing: border-box;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    height: 17vw;
+    width: 30vw;
 }
 
 .order-form .form-group {
-    margin-bottom: 2.2vw;
+    margin-bottom: 1vw;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1vw;
 }
 
 .order-form label {
@@ -227,69 +237,35 @@ footer a:hover {
     min-width: 180px;
 }
 
-.order-form input[type="text"],
-.order-form input[type="email"] {
-    border: 3px solid red;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1vw;
-    padding: 0.5vw 0.7vw;
-    border-radius: 2px;
-    width: 45%;
-    max-width: 320px;
-    min-width: 120px;
-}
-
 .order-form input[placeholder] {
     color: #444;
     opacity: 1;
+}
+
+.order-form input{
+    border: 4px solid red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    height: 80%;
+    width: 45%;
+    max-width: 250px;
 }
 
 .order-form .cc-group {
     flex-wrap: wrap;
     gap: 0.5vw;
 }
+
 .order-form .cc-input {
-    width: 3.5vw;
-    min-width: 40px;
-    max-width: 60px;
+    width: 3vw;
+    height: 1.5vw;
     text-align: center;
     margin-right: 0.2vw;
+    border: 4px solid red;
 }
+
 .order-form .cc-dash {
-    font-size: 1.5vw;
+    font-size: 1vw;
     margin: 0 0.2vw;
     color: #222;
-}
-
-.order-form .form-buttons {
-    display: flex;
-    gap: 2vw;
-    margin-top: 2vw;
-    justify-content: flex-start;
-}
-
-.order-form .submit-btn,
-.order-form .reset-btn {
-    padding: 0.7vw 2vw;
-    font-size: 1.1vw;
-    border: 2px solid #333;
-    border-radius: 4px;
-    background-color: #f5f5f5;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.order-form .submit-btn:hover,
-.order-form .reset-btn:hover {
-    background-color: #e0e0e0;
-    transform: scale(0.98);
-}
-    padding: 0.6rem 1.5rem;
-    font-size: 1rem;
-    border: 2px solid #333;
-    border-radius: 4px;
-    background-color: #f5f5f5;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    font-family: Arial, Helvetica, sans-serif;
 }
