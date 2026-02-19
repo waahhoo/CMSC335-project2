@@ -16,8 +16,8 @@ body {
 }
 
 .page {
-    width: 1370px;
-    height: 1270px;
+    width: 96%;
+    height: 95%;
     background-image: url('images/JimHenson.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     display: inline-block;
     padding: 8px 14px;
-    font-size: 6rem;
+    font-size: 480%;
     margin: 0px 20px;
     text-decoration: underline;
 }
@@ -42,7 +42,7 @@ header {
 }
 
 main {
-    height: calc(100vh - 400px);
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,10 +114,18 @@ footer a:hover {
     border: 0.5rem solid azure;
     padding: 2rem;
     width: 100%;
-    height: 45rem;
+    height: 70%;
 }
 
 .form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-column {
     margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -128,28 +136,33 @@ footer a:hover {
     color: #000;
     margin-bottom: 0.5rem;
     font-weight: 500;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .form-group select,
 .form-group input[type="number"],
 .form-group input[type="email"]{
-    padding: 0.5rem;
     border: 4px solid red;
-    border-radius: 2px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
+    height: 80%;
+    width: 45%;
+    max-width: 250px;
 }
 
-.form-group select {
-    cursor: pointer;
+.form-column label{
+    text-decoration: underline;
+    color: #000;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: x-large;
 }
 
-.form-group textarea {
+.form-column textarea {
     resize: vertical;
-    min-height: 120px;
-    height: 180px;
-    max-height: 180px;
+    min-height: 100px;
+    height: 100px;
+    max-height: 200px;
 }
 
 .checkbox-group {
@@ -185,6 +198,92 @@ footer a:hover {
 
 .submit-btn,
 .reset-btn {
+/* Order form styling for Placing Order page */
+.order-form {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 0.5rem solid azure;
+    padding: 2.5% 4%;
+    border-radius: 6px;
+    max-width: 60vw;
+    min-width: 320px;
+    width: 60vw;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.order-form .form-group {
+    margin-bottom: 2.2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+
+.order-form label {
+    text-decoration: underline;
+    color: #000;
+    font-weight: 500;
+    font-size: 1.3vw;
+    min-width: 180px;
+}
+
+.order-form input[type="text"],
+.order-form input[type="email"] {
+    border: 3px solid red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vw;
+    padding: 0.5vw 0.7vw;
+    border-radius: 2px;
+    width: 45%;
+    max-width: 320px;
+    min-width: 120px;
+}
+
+.order-form input[placeholder] {
+    color: #444;
+    opacity: 1;
+}
+
+.order-form .cc-group {
+    flex-wrap: wrap;
+    gap: 0.5vw;
+}
+.order-form .cc-input {
+    width: 3.5vw;
+    min-width: 40px;
+    max-width: 60px;
+    text-align: center;
+    margin-right: 0.2vw;
+}
+.order-form .cc-dash {
+    font-size: 1.5vw;
+    margin: 0 0.2vw;
+    color: #222;
+}
+
+.order-form .form-buttons {
+    display: flex;
+    gap: 2vw;
+    margin-top: 2vw;
+    justify-content: flex-start;
+}
+
+.order-form .submit-btn,
+.order-form .reset-btn {
+    padding: 0.7vw 2vw;
+    font-size: 1.1vw;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.order-form .submit-btn:hover,
+.order-form .reset-btn:hover {
+    background-color: #e0e0e0;
+    transform: scale(0.98);
+}
     padding: 0.6rem 1.5rem;
     font-size: 1rem;
     border: 2px solid #333;
@@ -193,10 +292,4 @@ footer a:hover {
     cursor: pointer;
     transition: all 0.2s ease;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.submit-btn:hover,
-.reset-btn:hover {
-    background-color: #e0e0e0;
-    transform: scale(0.98);
 }
